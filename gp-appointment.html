@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schedule Appointment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="navbar-title">NHS AI Health Assistant | Schedule Appointment</h1>
+  </header>
+
+  <main class="container appointment-section">
+    <div class="appointment-grid">
+      <!-- Left Side – Patient Info -->
+      <div class="patient-details">
+        <h2 class="section-heading">Patient Name: John Doe</h2>
+        <p>NHS ID: 485 777 3456</p>
+        <p>Date Received: 23/03/25 | 13:01</p>
+        <p>Phone Number: +44 7723 846 519</p>
+        <p>DOB: 03/03/1987</p>
+        <p><a href="#">View your trust’s information about this patient</a></p>
+
+        <p class="description" style="margin-top: 16px;">
+          Please ring the patient to confirm their availability for this appointment. If you feel the tool has made an error and this should not have generated this assessment,
+          click the <strong>Dismiss Case</strong> button after you have resolved the case with the patient.
+        </p>
+
+        <h3 class="subheading" style="margin-top: 24px;">Patient Symptoms Summary</h3>
+        <ul class="list">
+          <li>Persistent dry cough lasting 10 days</li>
+          <li>Shortness of breath on mild exertion (e.g. walking upstairs)</li>
+          <li>Chest discomfort, described as a dull ache</li>
+          <li>Occasional wheezing, particularly at night</li>
+          <li>No fever, but general fatigue and mild headache</li>
+        </ul>
+        <p>The patient has no known history of asthma, no recent COVID-19 infection, and is a non-smoker.</p>
+      </div>
+
+      <!-- Right Side – Date & Time Picker -->
+      <div class="appointment-picker">
+        <div class="form-group">
+          <label for="appointment-date">Select Appointment Date:</label>
+          <input type="date" id="appointment-date" name="appointment-date" />
+        </div>
+
+        <div class="form-group">
+          <label for="appointment-time">Select Time:</label>
+          <input type="time" id="appointment-time" name="appointment-time" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="actions" style="margin-top: 40px;">
+      <a href="gp-resolution.html" class="btn btn-secondary">Dismiss Case</a>
+      <a href="gp-resolution.html" class="btn btn-primary">Book Appointment</a>
+    </div>
+  </main>
+</body>
+</html>

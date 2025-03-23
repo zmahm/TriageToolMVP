@@ -1,0 +1,363 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+  }
+  
+  /* Layout */
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+  
+  .navbar {
+    background-color: #005EB8;
+    color: white;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .navbar-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  /* Section */
+  .intro {
+    margin-top: 32px;
+  }
+  
+  .section-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .description {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .subheading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .list {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .disclaimer {
+    font-size: 14px;
+    color: #333333;
+    font-style: italic;
+    margin-bottom: 32px;
+  }
+  
+  /* Buttons and Links */
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .btn-primary {
+    background-color: #005EB8;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .btn-primary:hover {
+    background-color: #004A99;
+  }
+  
+  .link-secondary {
+    font-size: 14px;
+    color: #005EB8;
+    text-decoration: underline;
+  }
+
+/* === FORM STYLES === */
+
+.form-section {
+    margin-top: 32px;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  
+  input,
+  textarea {
+    padding: 12px 14px;
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    resize: vertical;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: 2px solid #005EB8;
+  }
+  
+  .full-width {
+    grid-column: 1 / -1;
+  }
+  
+  .subtext {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 16px;
+  }
+
+  /* === User Results === */
+  .result-section {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .center-list {
+    list-style: disc;
+    display: inline-block;
+    text-align: left;
+    margin: 24px auto 48px auto;
+    padding-left: 20px;
+  }
+  
+  .thank-you-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  
+/* === Patients Assessment === */
+.assessments-section {
+    margin-top: 40px;
+  }
+  
+  .assessments-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  
+  .filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  
+  .filter-label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .filter-btn {
+    background: #f4f4f4;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .patient-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  }
+  
+  .patient-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  
+  .patient-card p {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  
+  /* === Schedule Appointment Layout === */
+
+.appointment-section {
+    margin-top: 40px;
+  }
+  
+  .appointment-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .patient-details {
+    flex: 1 1 500px;
+  }
+  
+  .appointment-picker {
+    flex: 1 1 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .appointment-picker label {
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  
+  .appointment-picker input[type="date"],
+  .appointment-picker input[type="time"] {
+    padding: 10px 12px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+  }
+  
+  /* Optional Secondary Button */
+  .btn-secondary {
+    background-color: #E8EDEE;
+    color: #1a1a1a;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #d4d8da;
+  }
+  /* gp resolution */
+  .resolution-section {
+    margin-top: 80px;
+    text-align: center;
+  }
+  
+  .feedback-options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .feedback-options .btn {
+    min-width: 90px;
+  }
+  
+  /* 111 operator patient assesment */
+  .assess-section {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .patient-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: space-between;
+  }
+  
+  .patient-info,
+  .patient-symptoms {
+    flex: 1 1 480px;
+  }
+  
+  .notes-section textarea {
+    width: 100%;
+    height: 140px;
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    resize: vertical;
+  }
+  
+  .row-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  /* Warning (escalation) style button */
+  .btn-warning {
+    background-color: #ED8B00;
+    color: white;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-warning:hover {
+    background-color: #d67600;
+  }
+  

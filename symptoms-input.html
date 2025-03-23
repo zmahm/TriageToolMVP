@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Symptom Input Screen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="navbar-title">NHS AI Health Assistant</h1>
+  </header>
+
+  <main class="container">
+    <form class="form-section">
+      <h2 class="section-heading">Input Your Details</h2>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="Please input your address" />
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth (DOB)</label>
+          <input type="date" id="dob" placeholder="Please input your DOB" />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Please input your phone number" />
+        </div>
+
+        <div class="form-group">
+          <label for="nhsid">NHS ID</label>
+          <input type="text" id="nhsid" placeholder="Please input your NHS ID number" />
+        </div>
+
+        <div class="form-group full-width">
+          <label for="address">Address</label>
+          <input type="text" id="address" placeholder="Please input your Address" />
+        </div>
+      </div>
+
+      <h2 class="section-heading">Describe Your Symptoms</h2>
+      <p class="subtext">
+        Please note it may take a few minutes for you to get your results. <br />
+        We will text you once the results are ready or a 111 operator will reach out if it’s urgent.
+      </p>
+
+      <div class="form-group full-width">
+        <textarea id="symptoms" rows="5" placeholder="Please input your symptoms here"></textarea>
+      </div>
+
+      <div class="actions">
+        <a href="./results-selfcare.html" class="btn btn-primary">Next (eg1)</a>
+        <a href="./results-gp.html" class="btn btn-primary">Next (eg2)</a>
+        <a href="./results-111operator.html" class="btn btn-primary">Next (eg3)</a>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
