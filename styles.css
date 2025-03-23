@@ -304,7 +304,7 @@
   .feedback-options .btn {
     min-width: 90px;
   }
-  
+
   /* 111 operator patient assesment */
   .assess-section {
     margin-top: 40px;
@@ -360,4 +360,19 @@
   .btn-warning:hover {
     background-color: #d67600;
   }
+  /* disclaimer */
+  .disclaimer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+    padding: 12px 16px;
+    border-top: 1px solid #ddd;
+    z-index: 100;
+  }
+  
   
